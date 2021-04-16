@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Scores</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+    <style>
+       .one {
+           margin-top: 5%;
+           margin-left: 30%;
+           margin-right: 30%;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            box-shadow:black;
+            text-align: center;
+            
+        
+        }
+        .two {
+            margin-left: 30%;
+            margin-right: 30%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            text-align: center;
+        }
+        .card {
+            background-color: rgb(235, 222, 203);
+        }
+        .tr {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<!-- style="background-color: #333;" -->
+<body style="background-color: #333;" >
+    <h1 card-header text-center></h1>
+    <!-- <h1 class="text-center" style="color"> Quiz Details </h1> -->
+    <div>
+        <div class="card one">
+            <h1 card-header text-center> Quiz Details</h1>
+            <p id = "myid"> <script> document.getElementById("myid").innerHTML=  "<strong> Name: </strong>" + localStorage.getItem("myid")</script></p>
+        </div>
+        <div class="card two">
+            <p id = "marks"> 
+            <script> document.getElementById("marks").innerHTML= "<strong> Score: </strong>" +
+                localStorage.getItem("marks");</script></p>
+        </div>
+    </div>
+    <br>
+<center>
+    <div class="card shadow p-6 mb-1 bg-dark rounded " style="border-radius: 20%; margin-left: 150px;margin-top: 10px; margin-right: 150px; box-sizing: inherit;   ">
+    
+        <table class="table" style="background-color: rgb(235, 222, 203);">
+            <h1 class="text-center" style="background-color: rgb(54, 114, 94)">Quiz Review</h1>
+            <thead>
+                <tr>
+                <th scope="col">Questions</th>
+                <th scope="col">Correct Options</th>
+                <th scope="col">Selected Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Q2</th>
+                <td>a</td>
+                <td id="Q1"><script>
+                    document.getElementById("Q1").innerHTML = localStorage.getItem("selectedQ1");
+                  </script></td>
+                </tr>
+                <tr>
+                <th scope="row">Q2</th>
+                <td>b</td>
+                <td id="Q2"><script>
+                    document.getElementById("Q2").innerHTML = localStorage.getItem("selectedQ2");
+                  </script></td>
+                </tr>
+                <tr>
+                <th scope="row">Q3</th>
+                <td >a</td>
+                <td id="Q3"><script>
+                    document.getElementById("Q3").innerHTML = localStorage.getItem("selectedQ3");
+                  </script></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q4</th>
+                    <td >a</td>
+                    <td id="Q4"><script>
+                        document.getElementById("Q4").innerHTML = localStorage.getItem("selectedQ4");
+                      </script></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q5</th>
+                    <td >c</td>
+                    <td id="Q5"><script>
+                        document.getElementById("Q5").innerHTML = localStorage.getItem("selectedQ5");
+                      </script></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q6</th>
+                    <td > c</td>
+                    <td id="Q6"><script>
+                        document.getElementById("Q6").innerHTML = localStorage.getItem("selectedQ6");
+                      </script></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q7</th>
+                    <td >b</td>
+                    <td id="Q7"><script>
+                        document.getElementById("Q7").innerHTML = localStorage.getItem("selectedQ7");
+                      </script></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q8</th>
+                    <td >c</td>
+                    <td id="Q8"><script>
+                        document.getElementById("Q8").innerHTML = localStorage.getItem("selectedQ8");
+                      </script></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q9</th>
+                    <td >a</td>
+                    <td id="Q9"><script>
+                        document.getElementById("Q9").innerHTML = localStorage.getItem("selectedQ9");
+                      </script></td>
+                </tr>
+                <tr>
+                    <th scope="row">Q10</th>
+                    <td >c</td>
+                    <td id="Q10"><script>
+                        document.getElementById("Q10").innerHTML = localStorage.getItem("selectedQ10");
+                      </script></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</center>
+
+            
+</body>   

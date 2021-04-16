@@ -1,0 +1,44 @@
+
+
+.card {
+    margin-top: 10%; 
+    margin-bottom: 15%; 
+    margin-left: 25%; 
+    margin-right: 25%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    box-shadow:black;
+    
+}
+
+.card-header {
+    background-color: rgb(25, 66, 56);
+}
+
+.card-body {
+    color: rgb(214, 226, 226);
+}
+
+.radiogroup {
+    box-sizing: inherit;
+    padding: 48px 64px;
+    border-radius: 16px;
+    background: #ecf0f3;
+    box-shadow:
+      4px 4px 4px 0px #d1d9e6 inset,
+      -4px -4px 4px 0px #ffffff inset;
+    
+
+}
+
+.text {
+    margin-left: 16px;
+}
+  
+  
+.label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #394a56;
+}
